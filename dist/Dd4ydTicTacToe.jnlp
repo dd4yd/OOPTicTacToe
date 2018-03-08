@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Dd4ydTicTacToe.jnlp">
+  <information>
+    <title>Dd4ydTicTacToe</title>
+    <vendor>daviddean</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Dd4ydTicTacToe.jar" size="7820" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Dd4ydTicTacToe" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="dd4ydtictactoe.Dd4ydTicTacToe"  name="Dd4ydTicTacToe" />
+  <update check="always"/>
+</jnlp>

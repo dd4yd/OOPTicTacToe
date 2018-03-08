@@ -1,0 +1,330 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+
+  <title>Mastering FXML: About This Tutorial | JavaFX 2 Tutorials and Documentation</title> 
+
+<!-- Add DARB meta tags here -->
+
+<!-- Start JavaFX meta tags -->
+<meta name="generator" content="Oracle DARB XHTML Converter (Mode = document) - Version 1.0.22 Build 1" />
+<meta name="date" content="2013-12-09T3:14:4Z" />
+<meta name="robots" content="noarchive" />
+<meta name="doctitle" content="About This Tutorial" />
+<meta name="relnum" content="Release 2.2" />
+<meta name="partnum" content="E20478-09" />
+<meta name="description" content="Learn about FXML, an XML-based declarative markup language for defining user interfaces in JavaFX 2 applications. This guide includes step-by-step instructions for creating an FXML user interface for a JavaFX login application." />
+<meta name="keywords" content="JavaFX 2, FXML, JavaFX GUI development, web development, Java applets,Java application development, GUI applications, rich internet applications, RIA, expressive content" />
+
+<!-- Persistent copyright link from DARB output -->
+<link rel="copyright" href="../../dcommon/html/cpyr.htm" title="Copyright" type="text/html" />
+
+<!-- Links to JavaFX output template style sheets -->
+<link href="../../javafx/css/javafx-darb-position.css" rel="stylesheet" type="text/css" />
+<link href="../../javafx/css/javafx-darb-fonts.css" rel="stylesheet" type="text/css" />
+
+
+<!-- START Prev and next buttons  -->
+
+<!-- END prev/next link tags -->
+
+
+<!-- Markup to fix IE CSS display problems -->
+<!--[if IE 5]>
+<style type="text/css"> 
+/* place css box model fixes for IE 5* in this conditional comment */
+.javafx #sidebar1 { width: 220px; }
+</style>
+<![endif]-->
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.javafx #sidebar1 { padding-top: 30px; }
+.javafx #mainContent li p{ margin:0; padding-bottom: 0px; }
+.javafx #mainContent { zoom: 1; }
+.javafx #mainContent {
+	margin: 0px 290px 0px 0px; /* the right margin on this div element creates the column down the right side of the page - no matter how much content the sidebar1 div contains, the column space will remain. You can remove this margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends. */
+	padding: 10px; /* remember that padding is the space inside the div box and margin is the space outside the div box */
+	width:600px;/*should be 615 but ie6 doesn't work;*/
+	border-right-style:none;
+	border-right-color:#C7C7C7;
+	border-right-width:0px;
+	background-image:url(../../javafx/images/fx_boxback.jpg);
+	background-repeat:no-repeat;
+	z-index:0;
+} 
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+</style>
+<![endif]-->
+
+<!-- Visibility toggle script -->
+<script type="text/javascript">
+<!--
+    function toggle_visibility(id) {
+       var e = document.getElementById(id);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+    }
+//-->
+</script>
+
+</head>
+
+<body class="javafx">
+<!-- The following markup is required for accessibility -->
+<noscript>
+JavaScript is not supported by your browser.  JavaScript support is required for full functionality of this page.
+</noscript> 
+
+
+<!-- ///////// Container ///////// -->
+  <div id="container">
+
+<!--///////// Header /////////-->
+  <div id="header">
+  	<div id="headerfxtrail" class="breadcrumb"><a href="../../index.html">JavaFX Documentation Home</a> &gt; <a href="jfxpub-fxml_get_started.htm">Mastering FXML</a>
+  </div>
+  <!-- end #header --></div>
+<!--///////// End Header /////////-->
+  
+  
+<!--///////// Start Side Bar /////////-->  
+  <div id="sidebar">
+   
+  <!-- Sidebar item 1. This <div> is obligatory --> 
+  <div id="sidebar_version_box" class="FX_type_med_gry">
+     <h1>Release: JavaFX 2.2</h1>
+     <p>Last Updated: January 2014<br /></p>
+   <p><a href="jfxpub-fxml_get_started.pdf">Download as PDF</a></p>  
+  <!-- end obligatory sidebar_version_box --></div>
+  
+  <!-- Sidebar item 2 Table of Contents. This <div> is optional --> 
+  <div id="sidebar_toc_box" class="FX_type_med_gry">
+     <h2 class="boxtitle"><a href="#" onclick="toggle_visibility('toc');">[+] Show/Hide Table of Contents</a></h2>
+  <div id="toc" style='display:none;'>
+
+   <h2 class="tocheader"><a href="jfxpub-fxml_get_started.htm#sthref2">About This Tutorial</a></h2>
+<h2 class="tocheader"><a href="why_use_fxml.htm#CHDCHIBE"><span class="secnum">1</span> Why Use FXML</a></h2>
+<ul style="list-style-type:none">
+<li><a href="why_use_fxml.htm#CIHJCABJ">Introduction to FXML</a></li>
+<li><a href="why_use_fxml.htm#CHDGAFHF">Simple Example of FXML</a></li>
+<li><a href="why_use_fxml.htm#CHDIEGBB">Benefits of FXML</a></li>
+<li><a href="why_use_fxml.htm#BABIECHG">FXML and Scene Builder</a></li>
+</ul>
+<h2 class="tocheader"><a href="whats_new.htm#CHDDDDCC"><span class="secnum">2</span> FXML&mdash;What's New in JavaFX 2.1</a></h2>
+<ul style="list-style-type:none">
+<li><a href="whats_new.htm#BGGEABGA">FXML Enhancements for JavaFX 2.1</a></li>
+<li><a href="whats_new.htm#BGGGCAJE">FXML Loader Incompatibilities with Previous JavaFX Releases</a>
+<ul style="list-style-type:none">
+<li><a href="whats_new.htm#BGGJDBIJ">Some JavaFX 2.0 FXML Escape Sequences Are Deprecated in JavaFX 2.1</a></li>
+<li><a href="whats_new.htm#BGGCIJEI">Backslash Is Now an Escape Character</a></li>
+</ul>
+</li>
+</ul>
+<h2 class="tocheader"><a href="whats_new2.htm#BABDBFFI"><span class="secnum">3</span> FXML&mdash;What's New in JavaFX 2.2</a></h2>
+<h2 class="tocheader"><a href="fxml_tutorial_intermediate.htm#CACFEHBI"><span class="secnum">4</span> Creating an Address Book with FXML</a></h2>
+<ul style="list-style-type:none">
+<li><a href="fxml_tutorial_intermediate.htm#sthref6">Set Up the Project</a></li>
+<li><a href="fxml_tutorial_intermediate.htm#CACBGIIG">Create the Basic User Interface</a></li>
+<li><a href="fxml_tutorial_intermediate.htm#sthref8">Add Columns to the Table</a></li>
+<li><a href="fxml_tutorial_intermediate.htm#sthref10">Define the Data Model</a></li>
+<li><a href="fxml_tutorial_intermediate.htm#sthref11">Associate Data with the Table Columns</a></li>
+<li><a href="fxml_tutorial_intermediate.htm#sthref13">Set Sort Order on Startup</a></li>
+<li><a href="fxml_tutorial_intermediate.htm#sthref15">Define Column Widths</a></li>
+<li><a href="fxml_tutorial_intermediate.htm#sthref17">Set Alignment in Table Cells</a></li>
+<li><a href="fxml_tutorial_intermediate.htm#sthref19">Add Rows to the Table</a></li>
+<li><a href="fxml_tutorial_intermediate.htm#sthref21">Where to Go from Here</a></li>
+</ul>
+<h2 class="tocheader"><a href="custom_control.htm#BABDAAHE"><span class="secnum">5</span> Creating a Custom Control with FXML</a></h2>
+<ul style="list-style-type:none">
+<li><a href="custom_control.htm#sthref23">Set Up a Project</a></li>
+<li><a href="custom_control.htm#sthref24">Create the Basic User Interface</a></li>
+<li><a href="custom_control.htm#sthref25">Create a Controller</a></li>
+<li><a href="custom_control.htm#sthref26">Load the FXML Source File and Define Stage and Scene</a></li>
+</ul>
+<h2 class="tocheader"><a href="fxml_deployment.htm#BABJBHJJ"><span class="secnum">6</span> Deployment of FXML Applications</a></h2> 
+
+  <!-- End toggle box --></div>
+  <!-- End item 2 TOC box --></div> 
+  
+  <!-- Sidebar item 3 DemoApp box. This <div> is optional --> 
+   <div id="sidebar_demoapp_box" class="FX_type_med_gry">
+    <h2 class="boxtitle">Application Files</h2>
+    <h3>View Source Code</h3>
+    <ul>
+        <li><a href="FXMLTableView.java.html">FXMLTableView.java</a></li>
+        <li><a href="fxml_tableview.fxml.html">fxml_tableview.fxml</a></li>
+        <li><a href="FXMLTableViewController.java.html">FXMLTableViewController.java</a></li>
+        <li><a href="Person.java.html">Person.java</a></li>
+        <li><a href="FormattedTableCellFactory.java.html">FormattedTableCellFactory.java</a></li>
+
+    </ul>
+    <h3>Download Source Code</h3>
+    <ul>
+        <li><a href="FXMLTableView.zip">FXMLTableView.zip</a></li>
+        <li><a href="CustomControlExample.zip">CustomControlExample.zip</a></li>
+    </ul>
+</div>                                        
+  <!-- End item 3 DemoApp box -->
+  
+  <!-- Sidebar item 4 Profile box. This <div> is optional --> 
+     <div id="sidebar_profile_box" class="FX_type_med_gry">
+    <h2 class="boxtitle">Profiles</h2>
+
+    <div class="profile">
+     <h3>Irina Fedortsova</h3>
+    <p><em>Technical Writer, Oracle</em> </p>
+    <p><img src="../../javafx/author_images/irina_fedortsova2.jpg" alt="The picture of the author" width="68" height="88"/>Irina has written tutorials and technical articles on Java and JavaFX technologies. She lives in St. Petersburg, Russia. In her spare time, she enjoys swing dancing, playing piano, and reading. </p>
+
+   </div>
+
+   </div>  
+  <!-- end Box 4 Profile -->  
+  
+  <!-- Sidebar item 5 Feedback box. This <div> is optional -->
+  <div id="sidebar_feedback_box" class="FX_type_med_gry">
+<h2 class="boxtitle">We Welcome Your Comments</h2>
+<p>Send us <a href="mailto:jfx-docs-feedback_ww@oracle.com?subject=Feedback&#58;%20Mastering FXML&#58;%20About This Tutorial">feedback about this document.</a></p>
+<p>If you have questions about JavaFX, please go to the <a href="http://forums.oracle.com/forums/forum.jspa?forumID=1385">forum.</a></p>
+</div>
+
+  <!-- end Box 5 Profile -->
+
+  <!-- Sidebar item 5 Feedback box. This <div> is optional -->
+  <!-- [REPLACE_SINGLEP_FEEDBACK] -->
+  <!-- end Box 5 Profile -->
+  
+  <!-- end #sidebar --></div>
+  
+  <!--///////// End Side Bar /////////-->
+  
+  
+<!--///////// Main Content /////////-->
+  <div id="mainContent">
+  
+  <!-- Book Info div is used only for multipage documents -->
+  <div id="bookTitle">
+      <h1>Mastering FXML </h1>
+  </div> 
+  <!-- End BookInfo div tag -->
+
+  <!-- START NEXT_PREVIOUS BUTTONS -->
+  <div class="pagestepper">
+<table class="simple oac_no_warn" summary="" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td><div align="right"><a href="why_use_fxml.htm"><img src="../../javafx/images/javafx-nextpage.gif" alt="Next" border="0" /></a></div></td>
+</tr>
+</tbody></table>
+</div>
+  <!-- END NEXT_PREVIOUS BUTTONS -->
+   
+  
+  <div id="ind"> 
+
+<!-- /////////////// Start content copied from DARB output ////////////// -->
+
+	<a id="sthref2" name="sthref2"></a>
+<h1 class="part">About This Tutorial</h1>
+<p>This document consists of the following pages:</p>
+<ul>
+<li>
+<p><a href="why_use_fxml.htm#CHDCHIBE">Why Use FXML</a></p>
+<p>A basic description of FXML and the benefits of using it to create user interfaces.</p>
+</li>
+<li>
+<p><a href="whats_new.htm#CHDDDDCC">FXML&mdash;What's New in JavaFX 2.1</a></p>
+<p>A list of FXML enhancements in JavaFX 2.1 and incompatibilities with previous releases.</p>
+</li>
+<li>
+<p><a href="whats_new2.htm#BABDBFFI">FXML&mdash;What's New in JavaFX 2.2</a></p>
+<p>A list of FXML enhancements in JavaFX 2.2.</p>
+</li>
+<li>
+<p><a href="fxml_tutorial_intermediate.htm#CACFEHBI">Creating an Address Book with FXML</a></p>
+<p>A tutorial that shows how to populate a table with data, sort the data at application startup, align the data in the table cells, and add rows to the table.</p>
+</li>
+<li>
+<p><a href="custom_control.htm#BABDAAHE">Creating a Custom Control with FXML</a></p>
+<p>A tutorial that shows how to create a custom control using APIs introduced in JavaFX 2.2.</p>
+</li>
+<li>
+<p><a href="fxml_deployment.htm#BABJBHJJ">Deployment of FXML Applications</a></p>
+<p>A clarification about why some FXML applications need digital signatures. An alternative to signing the application is also presented.</p>
+</li>
+</ul>
+<p>You can also get information on FXML from the following resources:</p>
+<ul>
+<li>
+<p><a href="../get_started/fxml_tutorial.htm">Creating a User Interface with FXML</a></p>
+<p>A beginning tutorial that shows how to create a login application using FXML.</p>
+</li>
+<li>
+<p><a href="http://docs.oracle.com/javafx/2/api/javafx/fxml/doc-files/introduction_to_fxml.html">Introduction to FXML</a></p>
+<p>A reference document that provides information on the elements that make up the FXML language. The document is included in the <code>javafx.fxml</code> package in the API documentation.</p>
+</li>
+<li>
+<p><a href="https://forums.oracle.com/forums/forum.jspa?forumID=1385">JavaFX 2 Forum</a></p>
+<p>A place where you can post questions about FXML.</p>
+</li>
+</ul>
+
+	
+	
+
+    <!-- /////////////// End content copied from DARB output ////////////// -->
+
+    </div>  <!-- End ind div tag --> 
+
+  <!-- START NEXT_PREVIOUS BUTTONS -->
+  <div class="pagestepper">
+<table class="simple oac_no_warn" summary="" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td><div align="right"><a href="why_use_fxml.htm"><img src="../../javafx/images/javafx-nextpage.gif" alt="Next" border="0" /></a></div></td>
+</tr>
+</tbody></table>
+</div>
+  <!-- END NEXT_PREVIOUS BUTTONS -->
+
+    
+<!-- end #mainContent --></div><br class="clearfloat" />
+<!--///////// End Main Content /////////-->	
+    
+    
+    
+<!--///////// Footer /////////-->
+  <div id="footer">
+  
+  <!-- Start SiteCatalyst (Omniture) code   -->
+<script type="text/javascript" src="http://www.oracle.com/ocom/groups/systemobject/@mktg_admin/documents/systemobject/s_code_download.js"></script>
+<script type="text/javascript" src="http://www.oracle.com/ocom/groups/systemobject/@mktg_admin/documents/systemobject/s_code.js"></script>
+
+ 
+<!-- ********** DO NOT ALTER ANYTHING BELOW THIS LINE ! *********** -->
+
+<!--  Below code will send the info to Omniture server -->
+<script  type="text/javascript">var s_code=s.t();if(s_code)document.write(s_code)</script>
+ 
+<!-- End SiteCatalyst code --> 
+
+<!-- Footer Legal info -->
+  <div id="fx_blur"><span class="copyrightlogo">Copyright&nbsp;&copy;&nbsp;2008, 2014,&nbsp;Oracle&nbsp;and/or&nbsp;its&nbsp;affiliates.&nbsp;All&nbsp;rights&nbsp;reserved.</span> 
+  <a href="../../dcommon/html/cpyr.htm"><br />
+  <span class="copyrightlogo">Legal Notices</span></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="copyrightlogo"><a href="../../dcommon/html/accss.htm">Accessibility Statement</a></span>
+  </div> <!-- End footer legal info -->
+  
+  <!-- end #footer --></div>
+<!--///////// End Footer /////////-->
+
+<!-- end #container --></div>
+
+
+</body>
+</html>
+

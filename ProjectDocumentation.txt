@@ -1,0 +1,11 @@
+﻿David Dean
+Prof. Dale
+12439884 
+1 December 2016
+
+
+All in all, I wanted to make a 2 player game of tic tac toe, with a crispy looking interface. The game is self explanatory, but if you’re lost, there’s an about tab under help. When someone wins, the CSS changes for the winning line. And if you wish to save/ load your progress, there’s a buttonLog.txt file in the src folder that loads/ saves the game state. Menu -> Play starts a new game.
+
+
+Thanks,
+David Dean
